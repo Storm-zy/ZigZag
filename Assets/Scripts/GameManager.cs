@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        AdsShower.instance.LoadAd();
         UIManager.instance.GameStart();
         ScoreManager.instance.StartScore();
         GameObject.Find("PlatformSpawner").GetComponent<PlatformSpawner>().StartSpawningPlatforms();
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        AdsShower.instance.ShowAd();
         UIManager.instance.GameOver();
         ScoreManager.instance.StopScore();
         gameOver = true;
