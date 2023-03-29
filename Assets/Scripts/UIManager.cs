@@ -17,9 +17,11 @@ public class UIManager : MonoBehaviour
     public GameObject GameOverPanel;
     public GameObject TapText;
     public GameObject Score1;
+    public GameObject highScoreView;
     public TMP_Text Score;
     public TMP_Text HighScore1;
     public TMP_Text HighScore2;
+    public Button seeHighScore;
 
     
     void Awake()
@@ -37,13 +39,16 @@ public class UIManager : MonoBehaviour
     {
 
         HighScore1.text = "High Score: " + PlayerPrefs.GetInt("highscore");
+        highScoreView.SetActive(false);
+        seeHighScore.onClick.AddListener(viewHighScore);
     }
 
-    public void GameStart()
+    public void GameStart() 
     {
         Score1.SetActive(true);
         TapText.SetActive(false);
         StartingPanel.SetActive(false);
+        highScoreView.SetActive(false);
     }
 
     public void GameOver()
@@ -52,6 +57,7 @@ public class UIManager : MonoBehaviour
         Score.text = PlayerPrefs.GetInt("score").ToString();
         HighScore2.text = PlayerPrefs.GetInt("highscore").ToString();
         GameOverPanel.SetActive(true);
+        highScoreView.SetActive(true);
     }
 
     public void Reset()
@@ -59,6 +65,10 @@ public class UIManager : MonoBehaviour
         
         SceneManager.LoadScene (0);
         
+    }
+
+    public void viewHighScore(){
+         SceneManager.LoadScene (1);
     }
 
     // Update is called once per frame

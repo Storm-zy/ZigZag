@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "808073882176",
+    "firebase_url": "https://zigzag-84b28-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "zigzag-84b28",
+    "storage_bucket": "zigzag-84b28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:808073882176:android:bc3c732ff9416d3fc7cda5",
+        "android_client_info": {
+          "package_name": "com.Stormz.ZiggyZag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "808073882176-paus4gu64veoikhrat8pgntf826ftdfk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqS9zwQN-5jB3Vc2iDoYNU76FpiASTSCE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "808073882176-paus4gu64veoikhrat8pgntf826ftdfk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
